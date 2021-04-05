@@ -104,3 +104,41 @@ body{
 ::placeholder{
     color: var(--white);
 }
+
+/* carrousel-section */
+.carrousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    /* display: flex; */
+}
+.carrousel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carrousel__item{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: palegreen; /*provisional*/
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.carrousel__item:hover~.carrousel__item{
+    transform: translate3d(100px, 0, 0);
+}
+.carrousel__container:hover .carrousel__item{
+    opacity: 0.3;
+}
+.carrousel__container:hover .carrousel__item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
