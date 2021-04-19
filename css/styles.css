@@ -204,8 +204,8 @@ body {
 }
 
 /* iniciar-sesion.html */
-/* login section */
-.login {
+/* sign section */
+.sign {
   background: linear-gradient(var(--purple), var(--green));
   display: flex;
   align-items: center;
@@ -215,7 +215,7 @@ body {
   min-height: calc(100vh - 200px);
 }
 
-.login__container {
+.sign__container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -229,56 +229,56 @@ body {
   min-width: 300px;
 }
 
-.login__container--form {
+.sign__container--form {
   display: flex;
   flex-direction: column;
 }
 
-.login__container--form label {
+.sign__container--form label {
   font-size: 1.4rem;
 }
 
-.login__container--remember-me {
+.sign__container--remember-me {
   color: var(--white);
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.login__container--remember-me a {
+.sign__container--remember-me a {
   color: var(--white);
   font-size: 1.4rem;
   text-decoration: none;
 }
 
-.login__container--remember-me a:hover {
+.sign__container--remember-me a:hover {
   text-decoration: underline;
 }
 
-.login__container--social-media > div {
+.sign__container--social-media > div {
   display: flex;
   align-items: center;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.login__container--social-media > div > img {
+.sign__container--social-media > div > img {
   width: 30px;
   margin-right: 10px;
 }
 
-.login__container--register {
+.sign__container--register {
   font-size: 1.4rem;
 }
 
-.login__container--register a {
+.sign__container--register a {
   color: var(--white);
   font-weight: bold;
   font-size: 1.6rem;
   text-decoration: none;
 }
 
-.login__container--register a:hover {
+.sign__container--register a:hover {
   text-decoration: underline;
 }
 
@@ -329,8 +329,9 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .login__container {
+  .sign__container {
     background-color: transparent;
+    justify-content: space-around;
     border: none;
     padding: 0px 8px;
     width: 100%;
