@@ -351,3 +351,26 @@ footer a:hover {
 }
 
 /*# sourceMappingURL=styles.css.map */
+/* notFound.html */
+.not-found__container{
+  min-height: calc(100vh - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 2.8rem;
+}
+.not-found__container h1{
+  text-transform: uppercase;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
