@@ -93,7 +93,7 @@ body {
 /* index.html */
 /* main */
 .main {
-  height: 300px;
+  height: auto;
   display: flex;
   place-items: center;
   flex-direction: column;
@@ -102,7 +102,7 @@ body {
 .main__title {
   color: var(--white);
   font-size: 2.5rem;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .input {
@@ -110,7 +110,7 @@ body {
   border-radius: 25px;
   color: var(--white);
   font-size: 1.6rem;
-  height: 50px;
+  height: 60px;
   padding: 0px 20px;
   width: 70%;
   background-color: rgba(172, 136, 255, 0.3);
@@ -124,15 +124,26 @@ body {
 /* carrousel-section */
 .carrousel {
   width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
   padding: 30px;
   position: relative;
   /* display: flex; */
 }
 
+.carrousel::-webkit-scrollbar{
+  background-color: var(--lavender);
+  height: 8px;
+}
+
+.carrousel::-webkit-scrollbar-thumb{
+  background-color: var(--green);
+}
+
 .carrousel__container {
   white-space: nowrap;
-  margin: 70px 0px;
+  margin: 60px 0px 24px;
   padding-bottom: 10px;
 }
 
