@@ -8,18 +8,18 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="../assets/icons/logo-platzi-video-BW2.png" alt="Platzi Video Icon">
+        <img tabindex="0" aria-label="Platzi Video logo" class="header__img" src="../assets/icons/logo-platzi-video-BW2.png" alt="Platzi Video Icon">
     </header>
     <section class="sign">
         <section class="sign__container">
-            <h2>Regístrate</h2>
+            <h2 tabindex="0" aria-label="Sign up heading">Regístrate</h2>
            <form class="sign__container--form">
-                <input class="input sign-in" type="text" placeholder="Nombre de Usuario">
-                <input class="input sign-in" type="text" placeholder="Correo">
-                <input class="input sign-in" type="text" placeholder="Confirmar Correo">
-                <input class="input sign-in" type="password" placeholder="Contraseña">
-                <input class="input sign-in" type="text" placeholder="Confirmar Contraseña">
-                <button class="button">Regístrarme :)</button> 
+                <input aria-label="Enter User Name" class="input sign-in" type="text" placeholder="Nombre de Usuario">
+                <input aria-label="Enter E-Mail" class="input sign-in" type="text" placeholder="Correo">
+                <input aria-label="Confirm E-Mail" class="input sign-in" type="text" placeholder="Confirmar Correo">
+                <input aria-label="Enter Password" class="input sign-in" type="password" placeholder="Contraseña">
+                <input aria-label="Confirm Password" class="input sign-in" type="text" placeholder="Confirmar Contraseña">
+                <button aria-label="Sign me up " class="button">Regístrarme :)</button> 
            </form>
            <section class="sign__container--social-media">
                 <div><img src="../assets/icons/google-icon.png" alt="Google icon">
@@ -29,13 +29,13 @@
                     Regístrarse con Twitter
                 </div>
            </section> 
-           <p class="sign__container--register">¿Ya tienes cuenta? <a href="./iniciar-sesion.html">Inicia sesión</a></p>
+           <p aria-labelledby="Inicia sesión" class="sign__container--register">¿Ya tienes cuenta? <a href="./iniciar-sesion.html">Inicia sesión</a></p>
         </section>
     </section>
     <footer class="footer">
-        <a href="/">Términos de Uso</a>
-        <a href="/">Declaración de Privacidad</a>
-        <a href="/">Centro de Ayuda</a>
+        <a aria-label="Terms of Use" href="/">Términos de Uso</a>
+        <a aria-label="Privacy" href="/">Declaración de Privacidad</a>
+        <a aria-label="Help" href="/">Centro de Ayuda</a>
     </footer>
 </body>
 </html>

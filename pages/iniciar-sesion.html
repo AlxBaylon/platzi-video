@@ -8,20 +8,20 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="../assets/icons/logo-platzi-video-BW2.png" alt="Platzi Video Icon">
+        <img tabindex="0" aria-label="Platzi Video logo" class="header__img" src="../assets/icons/logo-platzi-video-BW2.png" alt="Platzi Video Icon">
     </header>
     <section class="sign">
         <section class="sign__container">
-            <h2>Inicia sesión</h2>
+            <h2 tabindex="0" aria-label="Log in heading">Inicia sesión</h2>
            <form class="sign__container--form">
-                <input class="input sign-in" type="text" placeholder="Correo">
-                <input class="input sign-in" type="password" placeholder="Contraseña">
-                <button class="button">Iniciar Sesión</button> 
+                <input aria-label="E-Mail" class="input sign-in" type="text" placeholder="Correo">
+                <input aria-label="Password" class="input sign-in" type="password" placeholder="Contraseña">
+                <button aria-label="Log in button" class="button">Iniciar Sesión</button> 
                 <div class="sign__container--remember-me">
-                    <label>
+                    <label aria-labelledby="Recuérdame">
                         <input type="checkbox" name="" id="cbox1" value="checkbox">Recuérdame
                     </label>
-                    <a href="/">Olvidé mi Contraseña</a>
+                    <a aria-label="I Forgot Password" href="/">Olvidé mi Contraseña</a>
                 </div>               
            </form>
            <section class="sign__container--social-media">
@@ -32,13 +32,13 @@
                     Iniciar sesión con Twitter
                 </div>
            </section> 
-           <p class="sign__container--register">¿No tienes cuenta? <a href="./registro.html">Regístrate</a></p>
+           <p aria-label="Sign up" class="sign__container--register">¿No tienes cuenta? <a href="./registro.html">Regístrate</a></p>
         </section>
     </section>
     <footer class="footer">
-        <a href="/">Términos de Uso</a>
-        <a href="/">Declaración de Privacidad</a>
-        <a href="/">Centro de Ayuda</a>
+        <a aria-label="Terms of Use" href="/">Términos de Uso</a>
+        <a aria-label="Privacy" href="/">Declaración de Privacidad</a>
+        <a aria-label="Help" href="/">Centro de Ayuda</a>
     </footer>
 </body>
 </html>
